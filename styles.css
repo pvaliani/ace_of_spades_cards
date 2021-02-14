@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+:root {
+  --color-primary: #184269;
+  --color-secondary: #f4f4f4;
+}
+
+body {
+  background: var(--color-secondary, white);
+
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  margin: 2rem auto;
+
+  width: 100%;
+  max-width: 1500px;
+}
+
+.title,
+.subtitle {
+  margin: 0 auto;
+  width: 100%;
+  color: var(--color-primary, black);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.spacer {
+  display: block;
+
+  margin: 2rem auto;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: var(--color-primary, black);
+  border: 0;
+}
+
+iframe {
+  width: 100%;
+  border: 0;
+}
+
+/* your styles here */
+/* ---------------------------------------------------------- */
+
+/* Container class */
+
+.container{
+  background: rgb(255, 208, 0);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 1500px;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+/* The container for the card component */
+
+.card-container{
+  background: #fff;
+  height: 500px;
+  margin: 10px;
+  position: relative;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+/* Class for container for the image - sourced from Unsplash */
+
+.image-container{
+  max-height: 200px;
+  flex: 0 0 300px;
+  max-width: 300px;
+}
+
+.text-container{
+  padding-bottom: 20px;
+  background:#f4f4f4;
+
+}
+
+.card-image{
+  flex:0 0 300px;
+  max-width: 100%;
+}
+
+.chevron{
+  border: none;
+  display: inline-flex;
+  align-self: center;
+  
+}
+
+
+.text-container > h2{
+  color: #184269;
+}
+
+
+/* Button from the mockup example */
+
+/* tried removing the border here but could not justify the text absolute within the button.... */
+
+.button{
+  background-color: #184269;
+  text-align: center;
+  color: #f4f4f4;
+  border: none;
+  border-radius: 5%;
+  font-family: "Noto Sans", sans-serif;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+ 
+}
+
+/* Hover animation for all card buttons */
+
+.button:hover{
+  background-color: #4a7dad;
+  color: rgb(218, 199, 96);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* Viewport sizes according to the device being used to view the elements via media query */
+
+@media (min-width: 667px){
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+  .text-container{
+    padding-left: 15px;
+  }
+
+  .card-container{
+    flex-direction: row;
+    max-width: 600px;
+    height: 300px;
+  }
+
+  .card-image{
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .image-container{
+    max-height: 300px;
+    flex: 0 0 250px;
+  }
+
+}
+
+
+
