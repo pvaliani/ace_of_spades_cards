@@ -127,8 +127,6 @@ iframe {
   font-family: "Noto Sans", sans-serif;
   padding-top: 0px;
   padding-bottom: 0px;
-
- 
 }
 
 /* Hover animation for all card buttons */
@@ -141,7 +139,7 @@ iframe {
   transition: all 0.4s;
 }
 
-/* Viewport sizes according to the device being used to view the elements via media query */
+/* Viewport sizes according to the device being used to view the elements via media query i.e mobile/desktop/large screen/small screen */
 
 @media (min-width: 667px){
 .container{
